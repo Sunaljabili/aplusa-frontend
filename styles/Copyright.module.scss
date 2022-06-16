@@ -1,0 +1,14 @@
+@import "./mychanges/variable.scss";
+
+
+#copyright {
+  width: 100%;
+  background-color: $main-black-color;
+  .text {
+    text-align: center;
+    color: $white-color;
+    .title{
+        padding: 10px;
+    }
+  }
+}

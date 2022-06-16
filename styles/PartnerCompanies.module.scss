@@ -1,0 +1,41 @@
+@import "./mychanges/variable.scss";
+
+.partnerCompanies {
+  width: 100%;
+  .title{
+      text-align: center;
+      position: relative;
+      margin-bottom: 40px;
+      h5{
+          filter: blur(3px);
+          opacity: 0.3;
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        font-size:$head-title-size ;
+      }
+      h6{
+          font-size: $sub-title-size;
+          position: absolute;
+          left: 33%;
+          top: 55px;
+      }
+  }
+  .imgAreas {
+    min-height: 120px;
+    position: relative;
+    .imgBack {
+      z-index: 9;
+      transition: opacity 0.4s ease-in-out;
+      position: absolute;
+      &:hover {
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+    .imgFront {
+      z-index: 5;
+      position: absolute;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "./mychanges/variable.scss";
+
+#location {
+  .titleHead {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    span {
+      font-size: 75px;
+      filter: blur(2px);
+      color:#EBECED;
+      color: black;
+      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+    h5 {
+      font-size: 40px;
+      position: absolute;
+      bottom: 5%;
+      left: 46%;
+      line-height: 55px;
+      margin: 0 auto;
+    }
+  }
+}

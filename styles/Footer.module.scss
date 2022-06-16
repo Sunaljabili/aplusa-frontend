@@ -1,0 +1,72 @@
+@import "./mychanges/variable.scss";
+
+#footerStart {
+  background-color: $gray-color;
+  width: 100%;
+  padding: 70px;
+  .logoHeader {
+    .securitylogo {
+    }
+  }
+  .security {
+    .list {
+      h6 {
+        color: $main-color;
+        font-size: $list-size + 2px;
+      }
+      .listItem {
+        list-style-type: none;
+        position: relative;
+        a {
+          text-decoration: none;
+          color: $main-color;
+          font-size: $list-size;
+          &:hover {
+              transition: 1s;
+              &::after {
+                  opacity: 1 ;
+                }
+          }
+          &::after {
+              content: "";
+              position: absolute;
+              left: 0px;
+              bottom: 0px;
+              background-color: yellow;
+              height: 2px;
+              opacity: 0;
+              width: 35px;
+            }
+        }
+      }
+    }
+  }
+  .contact {
+    .list {
+      h6 {
+        margin-bottom: 15px;
+        font-size: $list-size + 2px;
+        color: $main-color;
+      }
+      .listItem {
+        list-style-type: none;
+        color: $main-color;
+        font-size: $list-size;
+        line-height: 22px;
+      }
+    }
+  }
+  .subscribe {
+    .list {
+      h6 {
+        color: $main-color;
+        font-size: $list-size + 2px;
+        margin-bottom: 15px;
+      }
+      .listItem {
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+  }
+}
